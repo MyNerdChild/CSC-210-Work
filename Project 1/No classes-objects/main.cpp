@@ -2,11 +2,10 @@
 //Project 1(OOP): Number Guessing Game
 //
 
-//ranNum is a placeholder for random number from class setUp
+//This is a basic verison that only consist of function and no classes (classes are required in real project)
 #include <iostream>
 #include <cstdlib>
 #include "time.h"
-//#include "setUp.h"
 using namespace std;
 
 int dChoice;
@@ -30,9 +29,7 @@ void diff3();
 
 int main()
 {
-    //setUp info;
     menu();
-
 
     return 0;
 }
