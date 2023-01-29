@@ -1,7 +1,7 @@
-//
+// Using VS Code
 //  Krysta Parker
-//  CSC 210
-//  9/9/22
+//  CSC 210: Exercise: Classes and Data Abstraction
+//  1/28/23
 //
 
 #include <iostream>
@@ -12,7 +12,10 @@ using namespace std;
 
 int main() {
 
-  Student info;
+  Student info("Krysta", "Math");
+
+info.printInfo(); //calls class function
+info.GetLetterGrade();  //calls class function
 
   return 0;
 }

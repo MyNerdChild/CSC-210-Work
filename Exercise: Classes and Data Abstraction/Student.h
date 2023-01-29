@@ -1,33 +1,26 @@
+#ifndef STUDENT_H_INCLUDED
+#define STUDENT_H_INCLUDED
+
 #include <iostream>
+#include <string>
 
-
-class Student
-{
+class Student{
 public:
-  Student();
+  //pre: constructor is declared
+  //post: all given information of student is printed (not grades)
+  void printInfo();
+  //pre: constructor is declared
+  //post: n and m vaules are set to private integers
+  void setInfo(string n, string m);
+  //pre: printInfo funtion display student info
+  //post: returns the letter grade of a score
+  void GetLetterGrade();
   //Constructor
-  void info(std::string n, std::string m); 
-  void GetLetterGrade(int score);
-  //returns the letter grade of a score using the following grading scale:
-
+  Student(string n = "", string m = "");
 private:
-  std::string name;
-  std::string major;
+  string name;
+  string major;
   int grade;
 };
 
-
-/*
-A = 100 – 90
-B = 89 – 80
-C = 79 – 70
-D = 69 – 60
-F = 59 - 0
-
-
-
-
-#ifndef STUDENT_H
-#define STUDENT_H
-#endif //STUDENT_H
-*/
+#endif // STUDENT_H_INCLUDED
