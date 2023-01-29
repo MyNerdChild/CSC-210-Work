@@ -3,19 +3,16 @@
 //  CSC 210: Exercise: Classes and Data Abstraction
 //  1/28/23
 //
-
-#include <iostream>
-#include <string>
 #include "Student.h"
 
 using namespace std;
 
 int main() {
 
-  Student info("Krysta", "Math");
+    Student info("Krysta Parker", "Linear Algebra");
 
-info.printInfo(); //calls class function
-info.GetLetterGrade();  //calls class function
+    info.printInfo();
+    info.GetLetterGrade();
 
-  return 0;
+    return 0;
 }
